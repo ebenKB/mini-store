@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import DefaultRoute from './components/DefaultRoute/DefaultRoute';
 import UserDetails from './components/pages/UseDetails';
 import CreateUser from './components/pages/CreateUser';
+import Payment from './components/pages/Payment';
 
 function App() {
   return (
@@ -26,6 +27,11 @@ function App() {
             <Route path="/customer/new">
               <Layout>
                 <CreateUser/>
+              </Layout>
+            </Route>
+            <Route path="/:slug/payment">
+              <Layout>
+                <Payment />
               </Layout>
             </Route>
           </Switch>
