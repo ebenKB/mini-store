@@ -5,12 +5,13 @@ import { useSelector } from 'react-redux';
 import { selectPayments } from '../../redux/slices/payment.slice';
 
 
-const History = () => {
+const History = ({ visible, handleDrawerAction }) => {
   const payments = useSelector(selectPayments)
-  const [visible, setVisible] = useState(false)
+  // const [visible, setVisible] = useState(false)
 
   const onClose = () => {
-    setVisible(false);
+    handleDrawerAction();
+    // setVisible(false);
   }
   
   return (
