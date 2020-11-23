@@ -1,0 +1,12 @@
+.user_list {
+  color: var(--white);
+  margin-top: 20px;
+}
+
+.list {
+  color: var(--white);
+}
+
+.link_item {
+  color: var(--blue);
+}

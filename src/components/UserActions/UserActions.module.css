@@ -1,0 +1,10 @@
+.wrapper {
+  padding: 20px;
+  width: calc(100% - 40px);
+  margin: auto;
+  text-align: center;
+}
+
+.wrapper *:not(:last-child) {
+  margin-right: 10px;
+}

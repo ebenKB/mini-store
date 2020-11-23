@@ -1,0 +1,12 @@
+.layout {
+  display: grid;
+  min-height: calc(100vh - 0px);
+  grid-template-columns: 400px auto;
+}
+
+.left {
+  background: var(--dark);
+  border-right: 1px solid white;
+  padding: 20px;
+  color: var(--white) !important;
+}
