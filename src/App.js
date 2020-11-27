@@ -7,6 +7,8 @@ import DefaultRoute from './components/DefaultRoute/DefaultRoute';
 import UserDetails from './components/pages/UseDetails';
 import CreateUser from './components/pages/CreateUser';
 import Payment from './components/pages/Payment';
+import Home from './components/pages/Home';
+import Purchase from './components/pages/Purchase';
 
 function App() {
   return (
@@ -16,7 +18,7 @@ function App() {
           <Switch>
             <Route path="/" exact>
               <Layout>
-                Main is here
+                <Home />
               </Layout>
             </Route>
             <Route path="/:slug" exact>
@@ -32,6 +34,11 @@ function App() {
             <Route path="/:slug/payment">
               <Layout>
                 <Payment />
+              </Layout>
+            </Route>
+            <Route path="/:slug/purchase">
+              <Layout>
+                <Purchase />
               </Layout>
             </Route>
           </Switch>

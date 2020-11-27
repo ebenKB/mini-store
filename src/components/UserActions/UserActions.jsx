@@ -13,7 +13,9 @@ const UserActions = ({ handleShowDrawer }) => {
       <Link to={`/${slug}/payment`}>
         <Button type="default">New Payment</Button>
       </Link>
-      <Button type="primary">New Purchase</Button>
+      <Link to={`/${slug}/purchase`}>
+        <Button type="primary">New Purchase</Button>
+      </Link>
     </div>
   )
 }

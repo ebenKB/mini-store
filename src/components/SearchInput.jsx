@@ -1,21 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Input } from 'antd';
 
 const { Search } = Input;
 
-const SearchInput = () => {
+const SearchInput = ({ handleAction }) => {
+  const [value, setValue] = useState('');
+
   const handleSearch = () => {
-    console.log('We want to search from here');
+    handleAction();
+  }
+
+  const handleInputChange  = (e) => {
+    setValue(e.target.value);
+    handleAction(e.target.value);
   }
 
   return (
-    <div>
-      <Search 
-        placeholder="Enter name to search"  
-        onSearch={handleSearch} 
-        onChange={handleSearch}
-      />
-    </div>
+    <Search
+      placeholder="Enter name to search"
+      onSearch={handleSearch}
+      onChange={handleInputChange}
+      value={value}
+    />
   )
 }
 
