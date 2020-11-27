@@ -19,7 +19,7 @@ const UserDetails = () => {
       dispatch(getUserByNameAsync(slugDetails[0].replace(/-/g, " ")))
     }
     return () => {}
-  }, [slug])
+  }, [slug, dispatch])
 
   return (
     <div>
