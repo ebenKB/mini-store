@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './CreateCustomer.module.css';
 import { Input, Button } from 'antd';
-import { Link, useHistory } from 'react-router-dom';
+import {useHistory } from 'react-router-dom';
 import ContentWrapper from '../ContentWrapper/ContentWrapper';
 import { useDispatch } from 'react-redux';
 import { addNewCustomer } from '../../redux/slices/customers.slice';

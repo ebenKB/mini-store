@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import ContentWrapper from '../ContentWrapper/ContentWrapper';
 import { Input, Button } from 'antd';
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { newPayment } from '../../redux/slices/payment.slice';
 import { selectCurrentCustomer } from '../../redux/slices/customers.slice';
@@ -9,13 +9,11 @@ import { selectCurrentCustomer } from '../../redux/slices/customers.slice';
 const CustomerPayment = () => {
   const dispatch = useDispatch();
   const [amount , setAmount] = useState(0.0);
-  const params = useParams();
-  const {slug} = params;
   const user = useSelector(selectCurrentCustomer);
   
 
   const handleInputChange = (e) => {
-    const { name, value } = e.target;
+    const { value } = e.target;
     setAmount(value)
   }
 

@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { List, Button } from 'antd';
 import styles from './UserList.module.css';
 import { selectCustomers } from '../../redux/slices/customers.slice';
-import { Link, useParams } from 'react-router-dom';
-import { useSelector, useDispatch } from 'react-redux';
-import { getUserByName, getUserByNameAsync, selectUserByName } from '../../redux/slices/customers.slice'
+import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import SearchInput from '../SearchInput';
 
 const UserList = () => {

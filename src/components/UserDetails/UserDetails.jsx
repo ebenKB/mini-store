@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import styles from './UserDetails.module.css';
-import { getUserByNameAsync, selectCurrentCustomer, selectUserByName } from '../../redux/slices/customers.slice';
+import { getUserByNameAsync, selectCurrentCustomer } from '../../redux/slices/customers.slice';
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { Button } from 'antd';
